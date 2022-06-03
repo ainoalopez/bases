@@ -22,8 +22,19 @@
         <hr>
 
         <form (ngSubmit)=" agregar() ">
-            <input type="text" placeholder="Nombre">
-            <input type="number" placeholder="Poder">
+            <input 
+            type="text" 
+            placeholder="Nombre" 
+            name="nombre"
+            [(ngModel)]="nuevo.nombre" 
+            >  
+            <!-- el párentesis dentros de las llaves es tanto para escuche como para emitir eventos -->
+            <input 
+            type="number" 
+            placeholder="Poder" 
+            name="poder"
+            [(ngModel)] ="nuevo.poder"
+            >
 
             <button type="submit">
                 Agregar
