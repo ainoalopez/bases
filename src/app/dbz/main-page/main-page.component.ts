@@ -22,4 +22,8 @@ export class MainPageComponent {
       nombre: 'Roshi',
       poder: 1000
     };
+
+    agregarNuevoPersonaje( argumento: Personaje ) {
+      this.personajes.push( argumento );
+    }
 }
