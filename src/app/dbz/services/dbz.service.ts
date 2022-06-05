@@ -20,7 +20,10 @@ export class DbzService {
     return [...this._personajes]; // las llaves indican que es un arreglo, los ... indican que es un operador spread
   } // operador spread -> separa cada uno de los elementos que tiene este arreglo y crea uno nuevo
 
-  constructor() {
-    console.log('servicio inicializado');
+  constructor() {}
+
+  agregarPersonaje(personaje: Personaje) {
+    this._personajes.push(personaje);
   }
+  
 }
